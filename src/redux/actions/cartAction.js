@@ -2,7 +2,7 @@ import * as actionTypes from '../constants/cartConstants';
 import axios from 'axios';
 
 export const addToCart = (id, quantity) => async (dispatch) => {
-    const URL=''
+    const URL='https://flipkartcecommback2.onrender.com'
     try { 
         const { data } = await axios.get(`${URL}/product/${id}`);
 
