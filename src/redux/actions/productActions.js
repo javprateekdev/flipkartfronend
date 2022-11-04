@@ -2,7 +2,7 @@ import * as actionTypes from '../constants/productConstant';
 import axios from 'axios';
 
 export const getProducts = () => async (dispatch) => {
-    const URL=""
+    const URL="https://flipkartcecommback2.onrender.com"
     try {
         const { data } = await axios.get(`${URL}/products`);
         dispatch({ type: actionTypes.GET_PRODUCTS_SUCCESS, payload: data });
